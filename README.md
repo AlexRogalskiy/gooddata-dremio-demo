@@ -26,7 +26,6 @@ The database has been dumped with this command:
 
   ``pg_restore --host=localhost --port=5432  --dbname=demo ./data/backup/insurance.dump``
 
-
 ## Dremio setup 
 
 The Dremio backup is in the ``./backup/dremio,backup.tgz``. Transfer the archive to the Dremio container using ``docker cp``, extract it and use the 
