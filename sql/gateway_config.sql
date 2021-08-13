@@ -9,7 +9,7 @@ CREATE EXTENSION multicorn;
 CREATE SERVER multicorn_gooddata FOREIGN DATA WRAPPER multicorn
 OPTIONS (
     wrapper 'gooddata_fdw.GoodDataForeignDataWrapper',
-    host 'http://localhost:3000',
+    host 'http://host.docker.internal:3000',
     token 'YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz'
 );
 

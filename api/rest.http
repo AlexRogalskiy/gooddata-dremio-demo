@@ -3,19 +3,28 @@
 # Then, choose an REST Client Environment (Ctrl+Alt+E)
 
 
-### Get Postgres connection
+### Get Dremio connection
 # @name getDataSource
 GET {{endpoint}}/api/entities/dataSources/
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
-### Publish Postgres connection
+### Publish Dremio connection
 # @name createDataSource
 POST {{endpoint}}/api/entities/dataSources/
 Content-Type: application/vnd.gooddata.api+json
 Authorization: Bearer {{token}}
 
 < ./datasource.json
+
+### Publish Dremio federated connection
+# @name createDataSource
+PUT {{endpoint}}/api/entities/dataSources/dremio-federated
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./datasource-federated.json
+
 
 ### Get Physical Model
 # @name getPhysicalModel

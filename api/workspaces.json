@@ -2,7 +2,6 @@
     "workspaceDataFilters": [
         {
             "columnName": "wdf__region_id",
-            "dataSourceId": "insurancedemo",
             "id": "region",
             "title": "Region",
             "workspace": {
@@ -559,6 +558,7 @@
                                                                     "type": "metric"
                                                                 }
                                                             },
+                                                            "computeRatio": false,
                                                             "filters": []
                                                         }
                                                     },
@@ -576,11 +576,11 @@
                                                     "localIdentifier": "152bf8aa488e4b1c95b426f1be99c7ac",
                                                     "displayForm": {
                                                         "identifier": {
-                                                            "id": "claim_date.quarter",
+                                                            "id": "claim_date.month",
                                                             "type": "label"
                                                         }
                                                     },
-                                                    "alias": "Quarter"
+                                                    "alias": "Month"
                                                 }
                                             }
                                         ],
@@ -588,10 +588,9 @@
                                     }
                                 ],
                                 "filters": [],
-                                "properties": {},
                                 "sorts": [],
+                                "properties": {},
                                 "visualizationUrl": "local:column",
-                                "isLocked": false,
                                 "version": "2"
                             },
                             "description": "Claim $ Trend",
@@ -835,6 +834,7 @@
                                                                     "type": "metric"
                                                                 }
                                                             },
+                                                            "computeRatio": false,
                                                             "filters": []
                                                         }
                                                     },
@@ -851,11 +851,11 @@
                                                     "localIdentifier": "0e218b976cbc4625b18b58588396cc32",
                                                     "displayForm": {
                                                         "identifier": {
-                                                            "id": "coverage_created_date.quarter",
+                                                            "id": "coverage_created_date.month",
                                                             "type": "label"
                                                         }
                                                     },
-                                                    "alias": "Quarter"
+                                                    "alias": "Month"
                                                 }
                                             }
                                         ],
@@ -863,10 +863,9 @@
                                     }
                                 ],
                                 "filters": [],
-                                "properties": {},
                                 "sorts": [],
+                                "properties": {},
                                 "visualizationUrl": "local:column",
-                                "isLocked": false,
                                 "version": "2"
                             },
                             "description": "Premium Revenue Trend",
@@ -998,31 +997,11 @@
                                         "Car"
                                     ],
                                     "title": "Car transmission type"
-                                },
-                                {
-                                    "description": "Db source",
-                                    "id": "car.db_source",
-                                    "labels": [
-                                        {
-                                            "description": "Db source",
-                                            "id": "car.db_source",
-                                            "primary": true,
-                                            "sourceColumn": "db_source",
-                                            "tags": [
-                                                "Car"
-                                            ],
-                                            "title": "Db source"
-                                        }
-                                    ],
-                                    "tags": [
-                                        "Car"
-                                    ],
-                                    "title": "Db source"
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.car",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.car",
                                 "type": "dataSource"
                             },
                             "description": "",
@@ -1084,8 +1063,8 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.claim",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.claim",
                                 "type": "dataSource"
                             },
                             "description": "",
@@ -1278,8 +1257,8 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.coverage",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.coverage",
                                 "type": "dataSource"
                             },
                             "description": "",
@@ -1524,31 +1503,11 @@
                                         "Customer"
                                     ],
                                     "title": "Customer segment"
-                                },
-                                {
-                                    "description": "Db source",
-                                    "id": "customer.db_source",
-                                    "labels": [
-                                        {
-                                            "description": "Db source",
-                                            "id": "customer.db_source",
-                                            "primary": true,
-                                            "sourceColumn": "db_source",
-                                            "tags": [
-                                                "Customer"
-                                            ],
-                                            "title": "Db source"
-                                        }
-                                    ],
-                                    "tags": [
-                                        "Customer"
-                                    ],
-                                    "title": "Db source"
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.customer",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.customer",
                                 "type": "dataSource"
                             },
                             "description": "",
@@ -1579,26 +1538,6 @@
                         },
                         {
                             "attributes": [
-                                {
-                                    "description": "Db source",
-                                    "id": "product.db_source",
-                                    "labels": [
-                                        {
-                                            "description": "Db source",
-                                            "id": "product.db_source",
-                                            "primary": true,
-                                            "sourceColumn": "db_source",
-                                            "tags": [
-                                                "Product"
-                                            ],
-                                            "title": "Db source"
-                                        }
-                                    ],
-                                    "tags": [
-                                        "Product"
-                                    ],
-                                    "title": "Db source"
-                                },
                                 {
                                     "description": "Product damage coverage",
                                     "id": "product.product_damage_coverage",
@@ -1801,8 +1740,8 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.product",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.product",
                                 "type": "dataSource"
                             },
                             "description": "",
@@ -1822,26 +1761,6 @@
                         },
                         {
                             "attributes": [
-                                {
-                                    "description": "Db source",
-                                    "id": "region.db_source",
-                                    "labels": [
-                                        {
-                                            "description": "Db source",
-                                            "id": "region.db_source",
-                                            "primary": true,
-                                            "sourceColumn": "db_source",
-                                            "tags": [
-                                                "Region"
-                                            ],
-                                            "title": "Db source"
-                                        }
-                                    ],
-                                    "tags": [
-                                        "Region"
-                                    ],
-                                    "title": "Db source"
-                                },
                                 {
                                     "description": "Region code",
                                     "id": "region.region_code",
@@ -1904,8 +1823,8 @@
                                 }
                             ],
                             "dataSourceTableId": {
-                                "dataSourceId": "dremio",
-                                "id": "insurance.insurance.region",
+                                "dataSourceId": "dremio-federated",
+                                "id": "demo.region",
                                 "type": "dataSource"
                             },
                             "description": "",
