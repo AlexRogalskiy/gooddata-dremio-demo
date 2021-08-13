@@ -1,0 +1,16 @@
+{
+    "data": {
+      "id": "dremio",
+      "type": "dataSource",
+      "attributes": {
+          "name": "Dremio",
+          "type": "DREMIO",
+          "url": "jdbc:dremio:direct=dremio:31010",
+          "schema": "",
+          "username": "dremio",
+          "password": "passw0rd"
+      }
+  },
+  "id": "dremio",
+  "type": "dataSource"
+}

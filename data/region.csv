@@ -1,0 +1,25 @@
+"region_id","region_code","region_name","region_crime_rate","region_safety_scale","wdf__region_id"
+GR,GR,Graubünden,13.80,86.20,GR
+BS,BS,Basel-Stadt,3.91,96.09,BS
+BE,BE,Bern,23.44,76.56,BE
+GL,GL,Glarus,31.41,68.59,GL
+NW,NW,Nidwalden,3.91,96.09,NW
+UR,UR,Uri,65.62,34.38,UR
+ZH,ZH,Zürich,38.17,61.83,ZH
+JU,JU,Jura,13.80,86.20,JU
+SO,SO,Solothurn,22.27,77.73,SO
+FR,FR,Fribourg,18.75,81.25,FR
+TI,TI,Ticino,29.21,70.79,TI
+SG,SG,St. Gallen,4.55,95.45,SG
+VD,VD,Vaud,30.52,69.48,VD
+TG,TG,Thurgau,18.75,81.25,TG
+AG,AG,Aargau,39.93,60.07,AG
+VS,VS,Valais,31.41,68.59,VS
+OW,OW,Obwalden,3.91,96.09,OW
+NE,NE,Neuchâtel,3.91,96.09,NE
+BL,BL,Basel-Landschaft,61.91,38.09,BL
+SH,SH,Schaffhausen,22.66,77.34,SH
+LU,LU,Lucerne,35.94,64.06,LU
+ZG,ZG,Zug,3.91,96.09,ZG
+GE,GE,Geneva,31.41,68.59,GE
+SZ,SZ,Schwyz,34.77,65.23,SZ

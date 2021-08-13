@@ -1,0 +1,426 @@
+{
+    "pdm": {
+        "tables": [
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_fuel_type",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_gears",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_make",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_model",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_transmission_type",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.car",
+                "path": [
+                    "insurance.insurance",
+                    "car"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "claim_amount",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "claim_date",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "claim_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__region_id",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.claim",
+                "path": [
+                    "insurance.insurance",
+                    "claim"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "car_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_accident_probability",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "coverage_agent",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_annual_premium",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "coverage_cancelled_date",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "DATE",
+                        "isPrimaryKey": false,
+                        "name": "coverage_created_date",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_deductible",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_estimated_car_value",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "coverage_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "coverage_is_active",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_lifetime",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "coverage_payment_is_current",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "coverage_risk_score",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "coverage_status",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__region_id",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.coverage",
+                "path": [
+                    "insurance.insurance",
+                    "coverage"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_age_group",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_demographic_code",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_gender",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_name",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "customer_segment",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "region_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__region_id",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.customer",
+                "path": [
+                    "insurance.insurance",
+                    "customer"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_damage_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_fire_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_legal_defense_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_liability_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_name",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_passangers_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_theft_coverage",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_type",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "product_windshield_coverage",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.product",
+                "path": [
+                    "insurance.insurance",
+                    "product"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "db_source",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "region_code",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "region_crime_rate",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "region_id",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "region_name",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "region_safety_scale",
+                        "referencedTablePath": []
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "wdf__region_id",
+                        "referencedTablePath": []
+                    }
+                ],
+                "id": "insurance.insurance.region",
+                "path": [
+                    "insurance.insurance",
+                    "region"
+                ],
+                "type": "TABLE"
+            }
+        ]
+    }
+}

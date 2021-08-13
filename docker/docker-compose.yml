@@ -1,0 +1,50 @@
+version: '3.7'
+services:
+  gooddata-cn-ce:
+    image: 441851189095.dkr.ecr.eu-central-1.amazonaws.com/nas/gooddata-cn-ce:dremio
+    ports:
+      - "3000:3000"
+      - "5432:5432"
+    volumes:
+      - ./db-drivers:/opt/extra-drivers
+      - gooddata-cn-ce-data:/data
+    environment:
+      LICENSE_AND_PRIVACY_POLICY_ACCEPTED: "YES"
+      BUNDLE_TYPE: "gdc"
+
+  dremio:
+    image: dremio/dremio-oss:17.0.0
+    ports:
+      - '9047:9047'
+      - '31011:31010'
+      - '45678:45678'
+    volumes:
+      # DB drivers
+      - ./db-drivers/VERTICA/vertica-jdbc-10.0.1-2.jar:/opt/dremio/jars/3rdparty/vertica-jdbc-10.0.1-2.jar
+      - ./db-drivers/SNOWFLAKE/snowflake-jdbc-3.12.9.jar:/opt/dremio/jars/3rdparty/snowflake-jdbc-3.12.9.jar
+      # DB plugins
+      - ./db-drivers/DREMIO/dremio-verticaarp-plugin.jar:/opt/dremio/jars/dremio-verticaarp-plugin.jar
+      - ./db-drivers/DREMIO/dremio-snowflake-plugin.jar:/opt/dremio/jars/dremio-snowflake-plugin.jar
+      # DATA volume
+      - dremio-data:/opt/dremio/data
+
+  minio:
+    image: minio/minio:RELEASE.2020-10-18T21-54-12Z
+    volumes:
+      - minio-data:/data
+    ports:
+      - '19000:9000'
+    environment:
+      MINIO_ACCESS_KEY: tiger_abcde_k1234567
+      MINIO_SECRET_KEY: tiger_abcde_k1234567_secret1234567890123
+    command: server /data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+volumes:
+  gooddata-cn-ce-data:
+  dremio-data:
+  minio-data:

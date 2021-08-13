@@ -1,0 +1,46 @@
+# These variables are defined in workspace.code-workspace
+# Update according to your setup
+# Then, choose an REST Client Environment (Ctrl+Alt+E)
+
+
+### Get Postgres connection
+# @name getDataSource
+GET {{endpoint}}/api/entities/dataSources/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+### Publish Postgres connection
+# @name createDataSource
+POST {{endpoint}}/api/entities/dataSources/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./datasource.json
+
+### Get Physical Model
+# @name getPhysicalModel
+GET {{endpoint}}/api/layout/dataSources/dremio/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Publish Physical Model
+# @name publishPhysicalModel
+PUT {{endpoint}}/api/layout/dataSources/dremio/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./pdm.json
+
+### GET all workspaces
+# @name getWorkspaces
+GET {{endpoint}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### POST all workspaces
+# @name createWorkspaces
+PUT {{endpoint}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./workspaces.json

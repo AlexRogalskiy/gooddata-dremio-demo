@@ -1,0 +1,2120 @@
+{
+    "workspaceDataFilters": [
+        {
+            "columnName": "wdf__region_id",
+            "dataSourceId": "insurancedemo",
+            "id": "region",
+            "title": "Region",
+            "workspace": {
+                "id": "insurance-demo",
+                "type": "workspace"
+            },
+            "workspaceDataFilterSettings": [
+                {
+                    "filterValues": [
+                        "BE"
+                    ],
+                    "id": "region_be",
+                    "title": "BE",
+                    "workspace": {
+                        "id": "insurance-demo-be",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "TI"
+                    ],
+                    "id": "region_ti",
+                    "title": "TI",
+                    "workspace": {
+                        "id": "insurance-demo-ti",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "VD"
+                    ],
+                    "id": "region_vd",
+                    "title": "VD",
+                    "workspace": {
+                        "id": "insurance-demo-vd",
+                        "type": "workspace"
+                    }
+                },
+                {
+                    "filterValues": [
+                        "ZH"
+                    ],
+                    "id": "region_zh",
+                    "title": "ZH",
+                    "workspace": {
+                        "id": "insurance-demo-zh",
+                        "type": "workspace"
+                    }
+                }
+            ]
+        }
+    ],
+    "workspaces": [
+        {
+            "id": "insurance-demo",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [
+                        {
+                            "content": {
+                                "filterContextRef": {
+                                    "identifier": {
+                                        "id": "79a21dbe-d7f0-4053-86d8-31d0b3d48ea2",
+                                        "type": "filterContext"
+                                    }
+                                },
+                                "layout": {
+                                    "type": "IDashboardLayout",
+                                    "sections": [
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 3
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Claims",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "claim_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-kpi-claims-count",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 3
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Claims $",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "claim_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-kpi-claim",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 3
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "New Contracts",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "coverage_created_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-kpi-coverages-created",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 3
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Premium Revenue",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "coverage_created_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-kpi-revenue",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ],
+                                            "header": {
+                                                "title": "KPIs"
+                                            }
+                                        },
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Claim $ Trend",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "claim_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-claims-trend",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Premium Revenue Trend",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "coverage_created_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-premium-revenue-trend",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ],
+                                            "header": {
+                                                "title": "Trends"
+                                            }
+                                        },
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 12,
+                                                            "gridHeight": 37
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Premium Revenue Structure",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "coverage_created_date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "visualization-premium-revenue-structure",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ],
+                                            "header": {
+                                                "title": "Revenue structure"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "dashboard-overwiew",
+                            "title": "Overview"
+                        }
+                    ],
+                    "filterContexts": [
+                        {
+                            "content": {
+                                "filters": [
+                                    {
+                                        "dateFilter": {
+                                            "from": "-11",
+                                            "to": "0",
+                                            "granularity": "GDC.time.month",
+                                            "type": "relative"
+                                        }
+                                    }
+                                ],
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "79a21dbe-d7f0-4053-86d8-31d0b3d48ea2",
+                            "title": "filterContext"
+                        }
+                    ],
+                    "metrics": [
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/car.car_id})"
+                            },
+                            "description": "Number of cars.",
+                            "id": "car-count",
+                            "title": "Cars Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT SUM({fact/claim.claim_amount})"
+                            },
+                            "description": "Claim amount in US dollars.",
+                            "id": "claim-amount",
+                            "title": "Claim Amount"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/claim.claim_id})"
+                            },
+                            "description": "Number of claims.",
+                            "id": "claim-count",
+                            "title": "Claims Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/coverage.coverage_id})"
+                            },
+                            "description": "Number of contracts.",
+                            "id": "coverage-count",
+                            "title": "Contracts Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT SUM({fact/coverage.coverage_deductible})"
+                            },
+                            "description": "Contract deductible in US dollars.",
+                            "id": "coverage-deductible",
+                            "title": "Contract Deductible"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT SUM({fact/coverage.coverage_estimated_car_value})"
+                            },
+                            "description": "Estimated car value in US dollars.",
+                            "id": "coverage-estimated-car-value",
+                            "title": "Estimated Car Value"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT SUM({fact/coverage.coverage_lifetime})"
+                            },
+                            "description": "Contract lifetime in days.",
+                            "id": "coverage-lifetime",
+                            "title": "Contract Lifetime"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/customer.customer_id})"
+                            },
+                            "description": "Number of customers.",
+                            "id": "customer-count",
+                            "title": "Customers Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/premium-revenue} - {metric/claim-amount}"
+                            },
+                            "description": "Net revenue in US dollars.",
+                            "id": "net-revenue",
+                            "title": "Net Revenue"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT SUM({fact/coverage.coverage_annual_premium}*{fact/coverage.coverage_lifetime}/365)"
+                            },
+                            "description": "Premium revenue in US dollars.",
+                            "id": "premium-revenue",
+                            "title": "Premium Revenue"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/product.product_id})"
+                            },
+                            "description": "Number of products.",
+                            "id": "product-count",
+                            "title": "Products Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT COUNT({attribute/region.region_id})"
+                            },
+                            "description": "Number of regions.",
+                            "id": "region-count",
+                            "title": "Regions Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/car-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total cars count.",
+                            "id": "total-car-count",
+                            "title": "Total Cars Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/claim-amount} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total claim amount in US dollars.",
+                            "id": "total-claim-amount",
+                            "title": "Total Claim Amount"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/claim-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total claims count.",
+                            "id": "total-claim-count",
+                            "title": "Total Claims Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/coverage-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total contracts count.",
+                            "id": "total-coverage-count",
+                            "title": "Total Contracts Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/coverage-deductible} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total contract deductible in US dollars.",
+                            "id": "total-coverage-deductible",
+                            "title": "Total Contract Deductible"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/coverage-estimated-car-value} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total estimated car value in US dollars.",
+                            "id": "total-coverage-estimated-car-value",
+                            "title": "Total Estimated Car Value"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/coverage-lifetime} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total contract lifetime in US dollars.",
+                            "id": "total-coverage-lifetime",
+                            "title": "Total Contract Lifetime"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/customer-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total customers count.",
+                            "id": "total-customer-count",
+                            "title": "Total Customers Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/net-revenue} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total net revenue in US dollars.",
+                            "id": "total-net-revenue",
+                            "title": "Total Net Revenue"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]$#,,,,.0 T;\n[>=1000000000]$#,,,.0 B;\n[>=1000000]$#,,.0 M;\n[>=1000]$#,.0 K;\n[>=0]$#,##0;\n[<=-1000000000000]-$#,,,,.0 T;\n[<=-1000000000]-$#,,,.0 B;\n[<=-1000000]-$#,,.0 M;\n[<=-1000]-$#,.0 K;\n[<0]-$#,##0",
+                                "maql": "SELECT {metric/premium-revenue} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total premium revenue in US dollars.",
+                            "id": "total-premium-revenue",
+                            "title": "Total Premium Revenue"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/product-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total products count.",
+                            "id": "total-product-count",
+                            "title": "Total Products Count"
+                        },
+                        {
+                            "content": {
+                                "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                                "maql": "SELECT {metric/region-count} BY ALL IN ALL OTHER DIMENSIONS "
+                            },
+                            "description": "Total regions count.",
+                            "id": "total-region-count",
+                            "title": "Total Regions Count"
+                        }
+                    ],
+                    "visualizationObjects": [
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "f1f4c0f23dea4063a7a8c5633301c266",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "claim-amount",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Claim Amount",
+                                                    "alias": "Claims $"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "152bf8aa488e4b1c95b426f1be99c7ac",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "claim_date.quarter",
+                                                            "type": "label"
+                                                        }
+                                                    },
+                                                    "alias": "Quarter"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:column",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Claim $ Trend",
+                            "id": "visualization-claims-trend",
+                            "title": "Claim $ Trend"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "417c70634a11411b91edea1a66c5b07d",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "claim-amount",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Claim Amount"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:headline",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "KPI_Claim",
+                            "id": "visualization-kpi-claim",
+                            "title": "KPI_Claim"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "8303b6990e424ab29e7c5f0df861beea",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "claim.claim_id",
+                                                                    "type": "attribute"
+                                                                }
+                                                            },
+                                                            "aggregation": "count",
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Count of Claim id",
+                                                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:headline",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "KPI_Claims_Count",
+                            "id": "visualization-kpi-claims-count",
+                            "title": "KPI_Claims_Count"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "3fd7782a47414324adce835a75b32dfb",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "coverage.coverage_id",
+                                                                    "type": "attribute"
+                                                                }
+                                                            },
+                                                            "aggregation": "count",
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Count of Coverage id",
+                                                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:headline",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "KPI_coverages_created",
+                            "id": "visualization-kpi-coverages-created",
+                            "title": "KPI_coverages_created"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "b404a8fea2e340dabf3fc57bdefaa03c",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "premium-revenue",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Premium Revenue"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:headline",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "KPI_Revenue",
+                            "id": "visualization-kpi-revenue",
+                            "title": "KPI_Revenue"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "0b3a3a4a6e2547259725e18e64033620",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "premium-revenue",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Premium Revenue"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "bb6895568384411a909514dd5b95011f",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "car.car_make",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "b08cd137253d405f803601bf12fa89cb",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "customer.customer_age_group",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "segment"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:treemap",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Premium Revenue Structure",
+                            "id": "visualization-premium-revenue-structure",
+                            "title": "Premium Revenue Structure"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "1bf0ac5f784f4474875477de186dd69d",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "premium-revenue",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Premium Revenue"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "0e218b976cbc4625b18b58588396cc32",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "coverage_created_date.quarter",
+                                                            "type": "label"
+                                                        }
+                                                    },
+                                                    "alias": "Quarter"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:column",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Premium Revenue Trend",
+                            "id": "visualization-premium-revenue-trend",
+                            "title": "Premium Revenue Trend"
+                        }
+                    ]
+                },
+                "ldm": {
+                    "datasets": [
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Car fuel type",
+                                    "id": "car.car_fuel_type",
+                                    "labels": [
+                                        {
+                                            "description": "Car fuel type",
+                                            "id": "car.car_fuel_type",
+                                            "primary": true,
+                                            "sourceColumn": "car_fuel_type",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car fuel type"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car fuel type"
+                                },
+                                {
+                                    "description": "Car gears",
+                                    "id": "car.car_gears",
+                                    "labels": [
+                                        {
+                                            "description": "Car gears",
+                                            "id": "car.car_gears",
+                                            "primary": true,
+                                            "sourceColumn": "car_gears",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car gears"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car gears"
+                                },
+                                {
+                                    "description": "Car id",
+                                    "id": "car.car_id",
+                                    "labels": [
+                                        {
+                                            "description": "Car id",
+                                            "id": "car.car_id",
+                                            "primary": true,
+                                            "sourceColumn": "car_id",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car id"
+                                },
+                                {
+                                    "description": "Car make",
+                                    "id": "car.car_make",
+                                    "labels": [
+                                        {
+                                            "description": "Car make",
+                                            "id": "car.car_make",
+                                            "primary": true,
+                                            "sourceColumn": "car_make",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car make"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car make"
+                                },
+                                {
+                                    "description": "Car model",
+                                    "id": "car.car_model",
+                                    "labels": [
+                                        {
+                                            "description": "Car model",
+                                            "id": "car.car_model",
+                                            "primary": true,
+                                            "sourceColumn": "car_model",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car model"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car model"
+                                },
+                                {
+                                    "description": "Car transmission type",
+                                    "id": "car.car_transmission_type",
+                                    "labels": [
+                                        {
+                                            "description": "Car transmission type",
+                                            "id": "car.car_transmission_type",
+                                            "primary": true,
+                                            "sourceColumn": "car_transmission_type",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Car transmission type"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Car transmission type"
+                                },
+                                {
+                                    "description": "Db source",
+                                    "id": "car.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "car.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Car"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Car"
+                                    ],
+                                    "title": "Db source"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.car",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "car.car_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "car",
+                            "references": [],
+                            "tags": [
+                                "Car"
+                            ],
+                            "title": "Car"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Claim id",
+                                    "id": "claim.claim_id",
+                                    "labels": [
+                                        {
+                                            "description": "Claim id",
+                                            "id": "claim.claim_id",
+                                            "primary": true,
+                                            "sourceColumn": "claim_id",
+                                            "tags": [
+                                                "Claim"
+                                            ],
+                                            "title": "Claim id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Claim"
+                                    ],
+                                    "title": "Claim id"
+                                },
+                                {
+                                    "description": "Db source",
+                                    "id": "claim.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "claim.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Claim"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Claim"
+                                    ],
+                                    "title": "Db source"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.claim",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Claim amount",
+                                    "id": "claim.claim_amount",
+                                    "sourceColumn": "claim_amount",
+                                    "tags": [
+                                        "Claim"
+                                    ],
+                                    "title": "Claim amount"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "claim.claim_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "claim",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "car",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "car_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "claim_date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "claim_date"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "customer",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "customer_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "product",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "product_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Claim"
+                            ],
+                            "title": "Claim"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Coverage agent",
+                                    "id": "coverage.coverage_agent",
+                                    "labels": [
+                                        {
+                                            "description": "Coverage agent",
+                                            "id": "coverage.coverage_agent",
+                                            "primary": true,
+                                            "sourceColumn": "coverage_agent",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Coverage agent"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage agent"
+                                },
+                                {
+                                    "description": "Coverage id",
+                                    "id": "coverage.coverage_id",
+                                    "labels": [
+                                        {
+                                            "description": "Coverage id",
+                                            "id": "coverage.coverage_id",
+                                            "primary": true,
+                                            "sourceColumn": "coverage_id",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Coverage id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage id"
+                                },
+                                {
+                                    "description": "Coverage is active",
+                                    "id": "coverage.coverage_is_active",
+                                    "labels": [
+                                        {
+                                            "description": "Coverage is active",
+                                            "id": "coverage.coverage_is_active",
+                                            "primary": true,
+                                            "sourceColumn": "coverage_is_active",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Coverage is active"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage is active"
+                                },
+                                {
+                                    "description": "Coverage payment is current",
+                                    "id": "coverage.coverage_payment_is_current",
+                                    "labels": [
+                                        {
+                                            "description": "Coverage payment is current",
+                                            "id": "coverage.coverage_payment_is_current",
+                                            "primary": true,
+                                            "sourceColumn": "coverage_payment_is_current",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Coverage payment is current"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage payment is current"
+                                },
+                                {
+                                    "description": "Coverage status",
+                                    "id": "coverage.coverage_status",
+                                    "labels": [
+                                        {
+                                            "description": "Coverage status",
+                                            "id": "coverage.coverage_status",
+                                            "primary": true,
+                                            "sourceColumn": "coverage_status",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Coverage status"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage status"
+                                },
+                                {
+                                    "description": "Db source",
+                                    "id": "coverage.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "coverage.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Coverage"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Db source"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.coverage",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Coverage accident probability",
+                                    "id": "coverage.coverage_accident_probability",
+                                    "sourceColumn": "coverage_accident_probability",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage accident probability"
+                                },
+                                {
+                                    "description": "Coverage annual premium",
+                                    "id": "coverage.coverage_annual_premium",
+                                    "sourceColumn": "coverage_annual_premium",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage annual premium"
+                                },
+                                {
+                                    "description": "Coverage deductible",
+                                    "id": "coverage.coverage_deductible",
+                                    "sourceColumn": "coverage_deductible",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage deductible"
+                                },
+                                {
+                                    "description": "Coverage estimated car value",
+                                    "id": "coverage.coverage_estimated_car_value",
+                                    "sourceColumn": "coverage_estimated_car_value",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage estimated car value"
+                                },
+                                {
+                                    "description": "Coverage lifetime",
+                                    "id": "coverage.coverage_lifetime",
+                                    "sourceColumn": "coverage_lifetime",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage lifetime"
+                                },
+                                {
+                                    "description": "Coverage risk score",
+                                    "id": "coverage.coverage_risk_score",
+                                    "sourceColumn": "coverage_risk_score",
+                                    "tags": [
+                                        "Coverage"
+                                    ],
+                                    "title": "Coverage risk score"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "coverage.coverage_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "coverage",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "car",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "car_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "coverage_cancelled_date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "coverage_cancelled_date"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "coverage_created_date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "coverage_created_date"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "customer",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "customer_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "product",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "product_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Coverage"
+                            ],
+                            "title": "Coverage"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Customer age group",
+                                    "id": "customer.customer_age_group",
+                                    "labels": [
+                                        {
+                                            "description": "Customer age group",
+                                            "id": "customer.customer_age_group",
+                                            "primary": true,
+                                            "sourceColumn": "customer_age_group",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer age group"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer age group"
+                                },
+                                {
+                                    "description": "Customer demographic code",
+                                    "id": "customer.customer_demographic_code",
+                                    "labels": [
+                                        {
+                                            "description": "Customer demographic code",
+                                            "id": "customer.customer_demographic_code",
+                                            "primary": true,
+                                            "sourceColumn": "customer_demographic_code",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer demographic code"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer demographic code"
+                                },
+                                {
+                                    "description": "Customer gender",
+                                    "id": "customer.customer_gender",
+                                    "labels": [
+                                        {
+                                            "description": "Customer gender",
+                                            "id": "customer.customer_gender",
+                                            "primary": true,
+                                            "sourceColumn": "customer_gender",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer gender"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer gender"
+                                },
+                                {
+                                    "description": "Customer id",
+                                    "id": "customer.customer_id",
+                                    "labels": [
+                                        {
+                                            "description": "Customer id",
+                                            "id": "customer.customer_id",
+                                            "primary": true,
+                                            "sourceColumn": "customer_id",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer id"
+                                },
+                                {
+                                    "description": "Customer name",
+                                    "id": "customer.customer_name",
+                                    "labels": [
+                                        {
+                                            "description": "Customer name",
+                                            "id": "customer.customer_name",
+                                            "primary": true,
+                                            "sourceColumn": "customer_name",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer name"
+                                },
+                                {
+                                    "description": "Customer segment",
+                                    "id": "customer.customer_segment",
+                                    "labels": [
+                                        {
+                                            "description": "Customer segment",
+                                            "id": "customer.customer_segment",
+                                            "primary": true,
+                                            "sourceColumn": "customer_segment",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Customer segment"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Customer segment"
+                                },
+                                {
+                                    "description": "Db source",
+                                    "id": "customer.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "customer.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Customer"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customer"
+                                    ],
+                                    "title": "Db source"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.customer",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "customer.customer_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "customer",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "region",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "region_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Customer"
+                            ],
+                            "title": "Customer"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Db source",
+                                    "id": "product.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "product.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Db source"
+                                },
+                                {
+                                    "description": "Product damage coverage",
+                                    "id": "product.product_damage_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product damage coverage",
+                                            "id": "product.product_damage_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_damage_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product damage coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product damage coverage"
+                                },
+                                {
+                                    "description": "Product fire coverage",
+                                    "id": "product.product_fire_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product fire coverage",
+                                            "id": "product.product_fire_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_fire_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product fire coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product fire coverage"
+                                },
+                                {
+                                    "description": "Product id",
+                                    "id": "product.product_id",
+                                    "labels": [
+                                        {
+                                            "description": "Product id",
+                                            "id": "product.product_id",
+                                            "primary": true,
+                                            "sourceColumn": "product_id",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product id"
+                                },
+                                {
+                                    "description": "Product legal defense coverage",
+                                    "id": "product.product_legal_defense_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product legal defense coverage",
+                                            "id": "product.product_legal_defense_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_legal_defense_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product legal defense coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product legal defense coverage"
+                                },
+                                {
+                                    "description": "Product liability coverage",
+                                    "id": "product.product_liability_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product liability coverage",
+                                            "id": "product.product_liability_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_liability_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product liability coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product liability coverage"
+                                },
+                                {
+                                    "description": "Product name",
+                                    "id": "product.product_name",
+                                    "labels": [
+                                        {
+                                            "description": "Product name",
+                                            "id": "product.product_name",
+                                            "primary": true,
+                                            "sourceColumn": "product_name",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product name"
+                                },
+                                {
+                                    "description": "Product passangers coverage",
+                                    "id": "product.product_passangers_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product passangers coverage",
+                                            "id": "product.product_passangers_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_passangers_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product passangers coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product passangers coverage"
+                                },
+                                {
+                                    "description": "Product theft coverage",
+                                    "id": "product.product_theft_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product theft coverage",
+                                            "id": "product.product_theft_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_theft_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product theft coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product theft coverage"
+                                },
+                                {
+                                    "description": "Product type",
+                                    "id": "product.product_type",
+                                    "labels": [
+                                        {
+                                            "description": "Product type",
+                                            "id": "product.product_type",
+                                            "primary": true,
+                                            "sourceColumn": "product_type",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product type"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product type"
+                                },
+                                {
+                                    "description": "Product windshield coverage",
+                                    "id": "product.product_windshield_coverage",
+                                    "labels": [
+                                        {
+                                            "description": "Product windshield coverage",
+                                            "id": "product.product_windshield_coverage",
+                                            "primary": true,
+                                            "sourceColumn": "product_windshield_coverage",
+                                            "tags": [
+                                                "Product"
+                                            ],
+                                            "title": "Product windshield coverage"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Product"
+                                    ],
+                                    "title": "Product windshield coverage"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.product",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "product.product_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "product",
+                            "references": [],
+                            "tags": [
+                                "Product"
+                            ],
+                            "title": "Product"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Db source",
+                                    "id": "region.db_source",
+                                    "labels": [
+                                        {
+                                            "description": "Db source",
+                                            "id": "region.db_source",
+                                            "primary": true,
+                                            "sourceColumn": "db_source",
+                                            "tags": [
+                                                "Region"
+                                            ],
+                                            "title": "Db source"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Db source"
+                                },
+                                {
+                                    "description": "Region code",
+                                    "id": "region.region_code",
+                                    "labels": [
+                                        {
+                                            "description": "Region code",
+                                            "id": "region.region_code",
+                                            "primary": true,
+                                            "sourceColumn": "region_code",
+                                            "tags": [
+                                                "Region"
+                                            ],
+                                            "title": "Region code"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Region code"
+                                },
+                                {
+                                    "description": "Region id",
+                                    "id": "region.region_id",
+                                    "labels": [
+                                        {
+                                            "description": "Region id",
+                                            "id": "region.region_id",
+                                            "primary": true,
+                                            "sourceColumn": "region_id",
+                                            "tags": [
+                                                "Region"
+                                            ],
+                                            "title": "Region id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Region id"
+                                },
+                                {
+                                    "description": "Region name",
+                                    "id": "region.region_name",
+                                    "labels": [
+                                        {
+                                            "description": "Region name",
+                                            "id": "region.region_name",
+                                            "primary": true,
+                                            "sourceColumn": "region_name",
+                                            "tags": [
+                                                "Region"
+                                            ],
+                                            "title": "Region name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Region name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "dremio",
+                                "id": "insurance.insurance.region",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Region crime rate",
+                                    "id": "region.region_crime_rate",
+                                    "sourceColumn": "region_crime_rate",
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Region crime rate"
+                                },
+                                {
+                                    "description": "Region safety scale",
+                                    "id": "region.region_safety_scale",
+                                    "sourceColumn": "region_safety_scale",
+                                    "tags": [
+                                        "Region"
+                                    ],
+                                    "title": "Region safety scale"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "region.region_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "region",
+                            "references": [],
+                            "tags": [
+                                "Region"
+                            ],
+                            "title": "Region"
+                        }
+                    ],
+                    "dateInstances": [
+                        {
+                            "description": "",
+                            "granularities": [
+                                "MINUTE",
+                                "HOUR",
+                                "DAY",
+                                "WEEK",
+                                "MONTH",
+                                "QUARTER",
+                                "YEAR",
+                                "MINUTE_OF_HOUR",
+                                "HOUR_OF_DAY",
+                                "DAY_OF_WEEK",
+                                "DAY_OF_MONTH",
+                                "DAY_OF_YEAR",
+                                "WEEK_OF_YEAR",
+                                "MONTH_OF_YEAR",
+                                "QUARTER_OF_YEAR"
+                            ],
+                            "granularitiesFormatting": {
+                                "titleBase": "",
+                                "titlePattern": "%titleBase - %granularityTitle"
+                            },
+                            "id": "claim_date",
+                            "tags": [
+                                "Claim date"
+                            ],
+                            "title": "Claim date"
+                        },
+                        {
+                            "description": "",
+                            "granularities": [
+                                "MINUTE",
+                                "HOUR",
+                                "DAY",
+                                "WEEK",
+                                "MONTH",
+                                "QUARTER",
+                                "YEAR",
+                                "MINUTE_OF_HOUR",
+                                "HOUR_OF_DAY",
+                                "DAY_OF_WEEK",
+                                "DAY_OF_MONTH",
+                                "DAY_OF_YEAR",
+                                "WEEK_OF_YEAR",
+                                "MONTH_OF_YEAR",
+                                "QUARTER_OF_YEAR"
+                            ],
+                            "granularitiesFormatting": {
+                                "titleBase": "",
+                                "titlePattern": "%titleBase - %granularityTitle"
+                            },
+                            "id": "coverage_cancelled_date",
+                            "tags": [
+                                "Coverage cancelled date"
+                            ],
+                            "title": "Coverage cancelled date"
+                        },
+                        {
+                            "description": "",
+                            "granularities": [
+                                "MINUTE",
+                                "HOUR",
+                                "DAY",
+                                "WEEK",
+                                "MONTH",
+                                "QUARTER",
+                                "YEAR",
+                                "MINUTE_OF_HOUR",
+                                "HOUR_OF_DAY",
+                                "DAY_OF_WEEK",
+                                "DAY_OF_MONTH",
+                                "DAY_OF_YEAR",
+                                "WEEK_OF_YEAR",
+                                "MONTH_OF_YEAR",
+                                "QUARTER_OF_YEAR"
+                            ],
+                            "granularitiesFormatting": {
+                                "titleBase": "",
+                                "titlePattern": "%titleBase - %granularityTitle"
+                            },
+                            "id": "coverage_created_date",
+                            "tags": [
+                                "Coverage created date"
+                            ],
+                            "title": "Coverage created date"
+                        }
+                    ]
+                }
+            },
+            "name": "Insurance Demo"
+        },
+        {
+            "id": "insurance-demo-be",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Insurance Demo (BE)",
+            "parent": {
+                "id": "insurance-demo",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "insurance-demo-ti",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Insurance Demo (TI)",
+            "parent": {
+                "id": "insurance-demo",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "insurance-demo-vd",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Insurance Demo (VD)",
+            "parent": {
+                "id": "insurance-demo",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "insurance-demo-zh",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "Insurance Demo (ZH)",
+            "parent": {
+                "id": "insurance-demo",
+                "type": "workspace"
+            }
+        }
+    ]
+}
