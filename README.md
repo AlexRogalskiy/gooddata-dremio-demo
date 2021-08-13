@@ -26,6 +26,19 @@ The database has been dumped with this command:
 
   ``pg_restore --host=localhost --port=5432  --dbname=demo ./data/backup/insurance.dump``
 
+
+## Dremio setup 
+
+The Dremio backup is in the ``./backup/dremio,backup.tgz``. Transfer the archive to the Dremio container using ``docker cp``, extract it and use the 
+
+``/opt/dremio/bin/dremio-admin restore -d <path-to-the-extracted-archive>`` 
+
+command to restore the Dremio backup. 
+
+__NOTE__: The local Postgres port in the Dremio metadata is 2345.
+
+__NOTE__: You will need to publish the ``./data/*.csv`` files to minio via the ``http://localhost:19000`` browser console (bucket ``data``). See the ``./img/minio.png`` image for more details. 
+
 ## Invoking GoodData.CN REST APIs
 Open workspace `workspace.code-workspace` in the VSCode editor (it should be
 detected automatically while opening the folder). There are three environments
